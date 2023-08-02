@@ -1,334 +1,366 @@
 /* Color Palette */
 :root {
-    --primary-color: #41B6E6; /* Blue */
-    --secondary-color: #11111F; /* Purple */
-    --accent-color: #E641B6; /* Magenta */
-    --background-color: #8B4513; /* Saddle Brown */
-    --neutral-color: #BC8952; /* Black */
-  }
-  
-  /* Global Styles/Everything */
-  body {
-    background-color: var(--neutral-color);
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    color: white;
-  }
-  
-  /* Main Styles */
-  main {
-    background-color: var(--neutral-color);
-    padding-bottom: 100px;
-  }
-  
-  /* Header Styles */
+  --primary-color: #41B6E6; /* Sky Blue */
+  --secondary-color: #11111F; /* Black */
+  --accent-color: #E641B6; /* Magenta */
+  --background-color: #8B4513; /* Saddle Brown */
+  --neutral-color: #BC8952; /* Tan */
+}
+
+/* Global Styles/Everything */
+body {
+  background-color: var(--neutral-color);
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+/* Header Styles */
 header {
-    background-color: var(--secondary-color); /* Black */
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-  
-  .brand-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Company Logo Styles */
-  header .brand img {
-    max-width: 150px; /* Adjust the value as needed */
-    height: auto;
-    margin-right: 10px; /* Add some space between the logo and the company name */
-  }
-  
-  /* Company Name Text Styles */
-  header .company-name {
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--secondary-color); /* White */
-    vertical-align: middle;
-  }
-  
-  /* Navigation Styles */
-  nav ul.menu {
-    list-style: none;
-    display: flex;
-    align-self: auto;
-    gap: 30px;
-  }
-  
-  nav ul.menu li a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-  
-  /* Start of Index                                                 
-  
-  
-  
-  
-  
-  Center the "Shop-bar" section home page */
-  #Shop-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 110vh; /* Adjust the height as needed */
-    background-color: var(--neutral-color);
-    padding: 20px; /* Add or adjust padding as needed */
-    margin-top: -2px; /* Move the content up by applying a negative top margin */
+.brand-container {
+  display: flex;
+  align-items: center;
 }
-  
-/* Style for the image */
+
+/* Company Logo Styles */
+header .brand img {
+  max-width: 150px; /* Adjust the value as needed */
+  height: auto;
+  margin-right: px; /* Add some space between the logo and the company name */
+}
+
+/* Company Name Text Styles */
+header .company-name {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--secondary-color); /* White */
+  vertical-align: middle;
+}
+
+/* Navigation Styles */
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  align-self: auto;
+  gap: 30px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Main Styles */
+main {
+  background-color: var(--neutral-color);
+  padding-bottom: 100px;
+}
+
+/* Shop-bar Styles */
+#Shop-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 110vh; /* Adjust the height as needed */
+  background-color: var(--neutral-color);
+  padding: 20px; /* Add or adjust padding as needed */
+  margin-top: -2px; /* Move the content up by applying a negative top margin */
+}
+
+/* Shop-bar image Styles */
 #Shop-bar img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px var(--primary-color);
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--primary-color);
 }
 
-/* CSS code targeting the h1 element inside #Shop-bar */
-#Shop-bar h1{
-    margin: 10px; /* Remove margin */
-    padding: 0; /* Remove padding */
-    color: var(--primary-color);
+/* Shop-bar heading Styles */
+#Shop-bar h1 {
+  margin: 10px; /* Remove margin */
+  padding: 20px; /* Remove padding */
+  color: var(--secondary-color);
 }
 
-
+/* Shop-bar paragraph Styles */
 #Shop-bar p {
-    margin: 10px; /* Remove margin */
-    padding: 0; /* Remove padding */
-    color: var(--secondary-color);
-    font-style: italic;
+  margin: 10px; /* Remove margin */
+  padding: 0; /* Remove padding */
+  color: var(--secondary-color);
+  font-style: italic;
 }
 
-
-  
-  /* Style the h1 element with the class "page-title" */
-  h1.review-title {
-    font-size: 24px;
-    color: var(--neutral-color); /* Use the primary color for the heading */
-    margin-bottom: 0px; /* Add some space below the heading */
-  }
-  
-  /* Style the review container */
-  .review {
-    background-color: var(--background-color); /* Use the secondary color as the background for the review container */
-    padding: 10px; /* Add padding around the content inside the review container */
-    border-radius: 8px; /* Add rounded corners to the review container */
-    margin-bottom: 10px; /* Add some space between each review */
-  }
-  
-  /* Style the blockquote inside the review container */
-  .review blockquote {
-    font-size: 16px;
-    font-style: italic;
-    color: var(--neutral-color); /* White text for better contrast on the colored background */
-  }
-  
-  /* Style the paragraph inside the review container */
-  .review p {
-    font-size: 14px;
-    font-style: italic; /* Italicize the name */
-    color: var(--neutral-color); /* White text for better contrast on the colored background */
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: rgba(17, 17, 31, 0.5); /* Black with 50% transparency */
-    padding: 10px;
-    position: fixed;
-    bottom: 0; /* Position the footer at the bottom of the viewport */
-    left: 0; /* Align the footer to the left */
-    right: 0; /* Align the footer to the right */
-    text-align: center; /* Center the content horizontally */
+/* Review Title Styles */
+h1.review-title {
+  font-size: 24px;
+  color: var(--secondary-color); /* Use the primary color for the heading */
+  margin-bottom: 20px; /* Add some space below the heading */
+  margin-left: 50px;
 }
-  
+
+/* Review container Styles */
+.review {
+  background-color: var(--primary-color); /* Use the secondary color as the background for the review container */
+  padding: 10px; /* Add padding around the content inside the review container */
+  border-radius: 30px; /* Add rounded corners to the review container */
+  margin-bottom: 20px; /* Add some space between each review */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Review blockquote Styles */
+.review blockquote {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--secondary-color); /* White text for better contrast on the colored background */
+}
+
+/* Review paragraph Styles */
+.review p {
+  font-size: 17px;
+  font-style: italic; /* Italicize the name */
+  color: var(--secondary-color); /* White text for better contrast on the colored background */
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(17, 17, 31, 0.5); /* Black with 50% transparency */
+  padding: 10px;
+  position: fixed;
+  bottom: 0; /* Position the footer at the bottom of the viewport */
+  left: 0; /* Align the footer to the left */
+  right: 0; /* Align the footer to the right */
+  text-align: center; /* Center the content horizontally */
+}
+
 footer .social-media-links {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Center the social media links horizontally */
-    gap: 60px;
-    padding: 5px;
-    max-width: 960px;
-    margin: 0 auto; /* Center the social media links container using margin */
-}
-  
-  /* Social Media Links Styles */
-  footer .social-media-links a {
-    text-decoration: none; /* Remove underline */
-    color: pink; /* Change the color to your desired color */
-  }
-  
-  /* Apply a hover effect for the links if desired */
-  footer .social-media-links a:hover {
-    color: var(--accent-color); /* Change to your desired hover color */
-  }
-  /* Drings page to paragraph */
-
-#coffee-haven p{
-    background-color: var(--secondary-color);
-    color: var(--neutral-color);
-    padding: 15px;
-    padding-bottom: 10px; /* Reduce the padding at the bottom to decrease the space */
-    border-radius: 45px; /* Add rounded corners to the product images */
-    margin-top: 10px;
-    text-size-adjust: 30px;
-  }
-  
-  /* Product Grid Styles */
-  .product-grid {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next row when there's not enough space */
-    justify-content: center; /* Center items horizontally within the container */
-    gap: 20px; /* Add some space between items */
-  }
-  
-  .product-item {
-    max-width: 230px; /* Limit the width of each item container */
-    text-align: center;
-    padding: 15px;
-    background-color: var(--secondary-color);
-    border-radius: 60px;
-    flex: 1 1 250px; /* Allow items to grow to fill the available space and prevent them from shrinking */
-  }
-  
-  .product-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 45px; /* Add rounded corners to the product images */
-    box-shadow: 0 0 10px var(--primary-color);
-  }
-  
-  .product-item h2 {
-    font-size: 20px;
-    margin-bottom: 01px;
-    color: var(--neutral-color); /* Use the primary color for the item titles */
-  }
-  
-  .product-item p {
-    font-size: 15px;
-    margin-bottom: 2px;
-    color: var(--neutral-color); /* White text for better contrast on the colored background */
-  }
-  
-  .product-item .price {
-    font-size: 16px;
-    color: var(--neutral-color); /* Use an accent color for the price */
-    font-weight: bold;
-  }
-  
-  /* Add a hover effect to the product items */
-  .product-item:hover {
-    transform: scale(1.06); /* Increase the size of the item on hover */
-    box-shadow: 0 0 10px var(--primary-color);
-  }
-  
-  /* CSS code targeting the h2 element with the class "drinks-menu-title" */
-  h2.drinks-menu-title,
-  h2.pastrie-menu-title {
-    /* Add your CSS styles here */
-    text-align: center;
-    color: var(--secondary-color);
-    font-size: 30px;
-  }
-  
-  /* Contact Us Page Styles */
-  .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column; /* Ensures the form and other elements are stacked vertically */
-  }
-  /* Contact us box  */
-  .contact-form-container {
-    max-width: 550px;
-    width: 60%;
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--primary-color);
-    margin-top: 50px; /* Add some space between the form and the navigation bar */
-    margin-left: auto; /* Center the container horizontally by pushing it to the maximum available space Keep it in th midle witht he bootom code*/ 
-    margin-right: auto; /* Center the container horizontally by pushing it to the maximum available space Keep it in th midle witht he above code*/
-    /* Center the form horizontally and vertically */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the social media links horizontally */
+  gap: 60px;
+  padding: 5px;
+  max-width: 960px;
+  margin: 0 auto; /* Center the social media links container using margin */
 }
 
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  /* Add styling to buttons */
-  button {
-    padding: 10px 20px;
-    background-color: #41B6E6;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #2B8BBE;
-  }
-  
-.opening-hours {
-    background-color: var(--background-color);
-    color: #41B6E6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 45px; /* Add rounded corners to the box */
-    box-shadow: 0 0 10px var(--primary-color);
-    margin-top: 20px;
+/* Social Media Links Styles */
+footer .social-media-links a {
+  text-decoration: none; /* Remove underline */
+  color: pink; /* Change the color to your desired color */
 }
 
-#Upcoming-events {
-    background-color: var(--background-color);
-    color: #41B6E6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 45px; /* Add rounded corners to the box */
-    box-shadow: 0 0 10px var(--primary-color);
-    margin-top: 20px;
+/* Apply a hover effect for the links if desired */
+footer .social-media-links a:hover {
+  color: var(--accent-color); /* Change to your desired hover color */
+}
+
+/* Coffee Haven Styles */
+#coffee-haven {
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  padding: 15px;
+  padding-bottom: 10px;
+  border-radius: 45px;
+  margin-top: 20px; /* Increase the margin for better separation */
+  text-align: justify; /* Justify the text for a cleaner appearance */
+  line-height: 1.6; /* Increase the line height for better readability */
+}
+
+#coffee-haven p:first-child {
+  margin-top: 0; /* Remove top margin for the first paragraph */
+}
+
+/* Product Grid Styles */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row when there's not enough space */
+  justify-content: center; /* Center items horizontally within the container */
+  gap: 20px; /* Add some space between items */
+}
+
+.product-item {
+  max-width: 230px; /* Limit the width of each item container */
+  text-align: center;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  border-radius: 60px;
+  flex: 1 1 250px; /* Allow items to grow to fill the available space and prevent them from shrinking */
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 45px; /* Add rounded corners to the product images */
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+.product-item h2 {
+  font-size: 20px;
+  margin-bottom: 01px;
+  color: var(--neutral-color); /* Use the primary color for the item titles */
+}
+
+.product-item p {
+  font-size: 15px;
+  margin-bottom: 2px;
+  color: var(--neutral-color); /* White text for better contrast on the colored background */
+}
+
+.product-item .price {
+  font-size: 16px;
+  color: var(--neutral-color); /* Use an accent color for the price */
+  font-weight: bold;
+}
+
+/* Add a hover effect to the product items */
+.product-item:hover {
+  transform: scale(1.06); /* Increase the size of the item on hover */
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Drinks Menu Title Styles */
+h2.drinks-menu-title,
+h2.pastrie-menu-title {
+  /* Add your CSS styles here */
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+
+/* Contact Us Page Styles */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column; /* Ensures the form and other elements are stacked vertically */
+}
+
+/* Contact Form Container Styles */
+.contact-form-container {
+  max-width: 550px;
+  width: 60%;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--primary-color);
+  margin-top: 50px; /* Add some space between the form and the navigation bar */
+  margin-left: auto; /* Center the container horizontally by pushing it to the maximum available space Keep it in th midle witht he bootom code*/ 
+  margin-right: auto; /* Center the container horizontally by pushing it to the maximum available space Keep it in th midle witht he above code*/
+  /* Center the form horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Label Styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Form Input and Textarea Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  background-color: #41B6E6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2B8BBE;
+}
+
+/* Opening Hours Styles     opening hour box */
+.opening-hours { 
+  background-color:  var(--secondary-color); /* Light gray background */
+  color: var(--primary-color); /* Dark gray text color */
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px var(--primary-color);
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.opening-hours h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--primary-color); /* Medium gray heading color */
+}
+
+.opening-hours p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Upcoming Events Styles upcoming event box*/
+.Upcoming-events {
+  background-color: var(--secondary-color); /* Light gray background */
+  color: var(--primary-color); /* Dark gray text color */
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px var(--primary-color);
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Upcoming-events h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--primary-color); /* Medium gray heading color */
 }
 
 .event {
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px; /* Add rounded corners to the box */
-    margin-top: 20px;
-    padding:  40px;
+  margin-top: 20px;
+}
+
+.event h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #11111F; /* Black heading color */
+}
+
+.event ul {
+  list-style: none; /* Remove the bullet points from the list */
+  padding: 0; /* Remove default padding */
+}
+
+.event ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.event p {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
